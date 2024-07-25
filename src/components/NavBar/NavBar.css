@@ -1,0 +1,94 @@
+
+.container{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    border-radius: 32px;
+    padding:12px 24px;
+    padding-left: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.navBar{
+    display: flex;
+    background-color: white;
+    width: 10%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100px;
+    padding-bottom: 24px;
+}
+
+
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    gap: 24px;
+}
+
+
+.logOutBtn{
+    border: 0;
+    background-color: transparent;
+}
+
+.logOutBtnHeader{
+    border: 0;
+    background-color: transparent;
+}
+
+
+.liBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.activeLiBtn {
+    background-color: blue;
+}
+
+.liBtn:hover {
+    background-color: grey;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .navBar {
+      flex-direction: row;
+      justify-content: center;
+      gap: 160px;
+      padding: 30px;
+    }
+    .navBar > ul {
+        flex-direction: row;
+      }
+  
+    .content {
+        width: 100%;
+    }
+   
+    .logo, .logOutBtn {
+        display: none;
+    }
+  
+    
+  }
+
