@@ -1,16 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar/NavBar';
-import Content from './components/Content/Content';
-import SideBar from './components/SideBar/SideBar';
+import {Route,Routes} from 'react-router-dom'
+import MainLayout from './layouts/MainLayout';
+import Profile from './pages/Profile/Profile';
+import Settings from './pages/Settings/Settings';
 
 function App() {
   return (
-    <div className="container">
-      <NavBar/>
-      <Content/>
-      <SideBar/>
-    </div>
+    <Routes>
+      <Route path='/' element={<MainLayout/>}>
+        <Route path='/profile' element={<Profile/>}/>
+        <Route path='/settings' element={<Settings/>}/>
+      </Route>
+    </Routes>
   );
 }
 

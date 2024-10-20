@@ -1,6 +1,6 @@
 import React from 'react';
 import './Content.css'
-const Content = () => {
+const Content = ({children}) => {
   return (
     <div className="content">
       <header>
@@ -27,7 +27,7 @@ const Content = () => {
           </button>
         </div>
       </header>
-      <div>contayner</div>
+      {children}
     </div>
   );
 }
